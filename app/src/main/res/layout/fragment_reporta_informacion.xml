@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTituloInicioReporta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informa para ayudar"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubirImagenReporta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Cargar imagen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloInicioReporta" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFotoReporta"
+        android:layout_width="99dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="110dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSubirImagenReporta"
+        app:layout_constraintStart_toEndOf="@+id/btnSubirImagenReporta"
+        app:layout_constraintTop_toTopOf="@+id/btnSubirImagenReporta"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTituloFijoReporta"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubirImagenReporta" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etTituloCrearReporta"
+        android:layout_width="317dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingresa titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloFijoReporta" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescripcionReporta"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Descripción"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTituloCrearReporta" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etDescripcionNotaCrear"
+        android:layout_width="379dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Describe detalladamente aqui"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescripcionReporta" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubirInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Subir información"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDescripcionNotaCrear" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVolverInicioReporta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Volver al inicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubirInformacion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
